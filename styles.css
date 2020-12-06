@@ -24,3 +24,34 @@ header {
 header > h1 {
   font-weight: 400;
 }
+
+.input-section {
+  margin: auto;
+  width: 500px;
+  margin-top: 3rem;
+}
+
+.input-area {
+  display: block;
+  width: 600px;
+  height: 120px;
+  font-family: 'Kalam', cursive;
+  font-size: 18px;
+  padding: 0.2rem;
+}
+
+.transalte-button {
+  font-family: 'Kalam', cursive;
+  padding: 18px 25px;
+  background-color: var(--primary-color);
+  border: none;
+  outline: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+.output-section {
+  margin: auto;
+  width: 500px;
+}
