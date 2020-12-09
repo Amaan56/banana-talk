@@ -54,9 +54,9 @@ header > h1 {
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-family: 'Kalam', cursive;
-  padding: 18px 25px;
+  padding: 0.5rem 0.5rem;
   background-color: var(--primary-color);
-  font-size: 20px;
+  font-size: 1.2rem;
   cursor: pointer;
   border: 1px solid black;
   outline: 1px solid black;
@@ -96,15 +96,27 @@ footer > h2 {
 }
 
 footer > p {
-  width: 500px;
+  width: 50vw;
   margin: auto;
   font-weight: 350;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 450px) {
   .input-area {
+    width: 80vw;
   }
 
   .output-area {
+    width: 82vw;
+  }
+  footer > p {
+    width: 90vw;
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  footer > p {
+    font-size: 0.7rem;
   }
 }
