@@ -45,7 +45,7 @@ header > h1 {
   font-size: 18px;
   padding: 0.2rem;
   resize: none;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
 .translate-button {
@@ -56,10 +56,10 @@ header > h1 {
   font-family: 'Kalam', cursive;
   padding: 18px 25px;
   background-color: var(--primary-color);
-  font-size: 18px;
+  font-size: 20px;
   cursor: pointer;
-  border: 2px solid black;
-  outline: 2px solid black;
+  border: 1px solid black;
+  outline: 1px solid black;
 }
 
 .output-section {
@@ -76,7 +76,7 @@ header > h1 {
   border: 1px solid black;
   padding: 1rem;
   background-color: white;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
 footer {
