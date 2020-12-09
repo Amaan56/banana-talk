@@ -1,7 +1,7 @@
 const inputArea = document.querySelector('.input-area');
 const outputArea = document.querySelector('.output-area');
 const translateBtn = document.querySelector('.translate-button');
-const baseURL = 'http://api.funtranslations.com/translate/minion.json';
+const baseURL = 'https://api.funtranslations.com/translate/minion.json';
 
 function constructUrl(searchParam) {
   return `${baseURL}?text=${searchParam}`;
