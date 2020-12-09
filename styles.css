@@ -25,6 +25,11 @@ header > h1 {
   font-weight: 400;
 }
 
+.main-content {
+  background: url('minion2.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
 .input-section {
   margin: auto;
   width: 600px;
@@ -38,6 +43,7 @@ header > h1 {
   font-family: 'Kalam', cursive;
   font-size: 18px;
   padding: 0.2rem;
+  resize: none;
 }
 
 .translate-button {
@@ -63,6 +69,7 @@ header > h1 {
   overflow: scroll;
   border: 1px solid black;
   padding: 1rem;
+  background-color: white;
 }
 
 footer {
