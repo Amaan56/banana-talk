@@ -47,3 +47,17 @@ header > h1 {
   margin: auto;
   margin-top: 1rem;
 }
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input-area {
+  resize: none;
+  width: 60vw;
+  border: 2px solid var(--blue-color);
+  height: 20vh;
+  margin: 2rem 0rem;
+  font-family: 'Hammersmith One', sans-serif;
+}
