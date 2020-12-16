@@ -1,0 +1,22 @@
+:root {
+  --blue-color: #1e2a78;
+  --yellow-color: #ffd615;
+}
+
+body {
+  display: flex;
+  width: 100vw;
+  margin: 0;
+}
+
+.blue-section {
+  flex: 0.2;
+  background-color: var(--blue-color);
+  height: 100vh;
+}
+
+.yellow-section {
+  flex: 0.8;
+  background-color: var(--yellow-color);
+  height: 100vh;
+}
