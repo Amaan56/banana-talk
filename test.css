@@ -37,3 +37,13 @@ body {
   padding: 1rem;
   font-size: 1rem;
 }
+
+header > h1 {
+  text-align: center;
+  color: var(--yellow-color);
+  background-color: var(--blue-color);
+  padding: 1rem;
+  width: 20%;
+  margin: auto;
+  margin-top: 1rem;
+}
