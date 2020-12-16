@@ -1,122 +1,200 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
 
 :root {
-  --primary-color: #f2c94c;
-}
-
-* {
-  margin: 0;
-  padding: 0;
+  --blue-color: #1e2a78;
+  --yellow-color: #ffd615;
 }
 
 body {
-  font-family: 'Kalam', cursive;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Hammersmith One', sans-serif;
 }
 
-header {
-  background-color: var(--primary-color);
-  height: 60px;
+.blue-section {
+  flex: 0.2;
+  background-color: var(--blue-color);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  width: 100vw;
-  border-bottom: 2px solid black;
+  justify-content: center;
+}
+
+.yellow-section {
+  flex: 0.8;
+  background-color: var(--yellow-color);
+  height: 100vh;
+}
+
+.intro-section {
+  border: 2px solid white;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 3rem;
+  color: var(--yellow-color);
+  padding: 1rem;
+  font-size: 1rem;
 }
 
 header > h1 {
-  font-weight: 400;
+  text-align: center;
+  color: var(--yellow-color);
+  background-color: var(--blue-color);
+  padding: 1rem;
+  width: 25%;
+  margin: auto;
+  margin-top: 1rem;
 }
-
-.main-content {
-  background: url('minion2.jpg') no-repeat center center fixed;
-  background-size: cover;
-}
-
-.input-section {
-  margin-top: 3rem;
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .input-area {
-  margin: auto;
-  display: block;
-  width: 62vw;
-  height: 120px;
-  font-family: 'Kalam', cursive;
-  font-size: 18px;
-  padding: 0.2rem;
   resize: none;
-  border: 1px solid black;
+  width: 60vw;
+  border: 2px solid var(--blue-color);
+  height: 20vh;
+  margin: 2rem 0rem;
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 1.2rem;
+  padding: 0.4rem;
 }
 
 .translate-button {
-  display: block;
-  margin: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-family: 'Kalam', cursive;
-  padding: 0.5rem 0.5rem;
-  background-color: var(--primary-color);
-  font-size: 1.2rem;
+  background-color: var(--yellow-color);
+  color: var(--blue-color);
+  border: 2px solid var(--blue-color);
+  font-family: 'Hammersmith One', sans-serif;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
   cursor: pointer;
-  border: 1px solid black;
-  outline: 1px solid black;
+  border-radius: 20px;
+  outline: none;
 }
 
-.output-section {
-  margin: auto;
+.translate-button:hover {
+  background-color: var(--blue-color);
+  color: var(--yellow-color);
+  outline: none;
 }
 
 .output-area {
-  margin: auto;
-  width: 100%;
   width: 60vw;
-  min-height: 10vh;
-  max-height: 20vh;
-  overflow: scroll;
-  border: 1px solid black;
-  padding: 1rem;
-  background-color: white;
-  border: 1px solid black;
-}
-
-footer {
-  background-color: var(--primary-color);
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100vw;
-  padding: 0.5rem;
+  border: 2px solid var(--blue-color);
   height: 20vh;
-  border-top: 2px solid black;
+  margin: 2rem 0rem;
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 1rem;
+  background-color: white;
+  overflow-y: scroll;
+  padding: 0.5rem;
 }
 
-footer > h2 {
-  padding: 0.5rem 0 0 0.2rem;
-  font-weight: 500;
+.output-area::-webkit-scrollbar {
+  width: 0.8rem;
 }
 
-footer > p {
-  width: 50vw;
-  margin: auto;
-  font-weight: 350;
+.output-area::-webkit-scrollbar-track {
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px grey;
+}
+
+.output-area::-webkit-scrollbar-thumb {
+  background: var(--blue-color);
+  border-radius: 10px;
+}
+
+.yellow-footer {
+  text-align: center;
+  color: var(--blue-color);
+  font-size: 1.2rem;
+}
+
+.blue-footer {
+  display: none;
+}
+
+.above-intro {
+  display: none;
+}
+
+@media only screen and (max-width: 950px) {
+  .blue-section {
+    flex: 0.3;
+  }
+  .yellow-section {
+    flex: 0.7;
+  }
 }
 
 @media only screen and (max-width: 450px) {
+  .blue-section {
+    flex: 0.4;
+  }
+  .yellow-section {
+    flex: 0.6;
+  }
+  .intro-section {
+    border: 2px solid white;
+    color: var(--yellow-color);
+    padding: 0.2rem;
+    font-size: 0.8rem;
+    border: none;
+    margin-top: 0.5rem;
+  }
+  header > h1 {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    width: 50%;
+  }
   .input-area {
     width: 80vw;
+    height: 10vh;
+    margin: 1rem 0rem;
+    font-size: 0.8rem;
+    padding: 0.2rem;
   }
-
-  .output-area {
-    width: 82vw;
-  }
-  footer > p {
-    width: 90vw;
-    font-size: 0.9rem;
-  }
-}
-
-@media only screen and (max-width: 350px) {
-  footer > p {
+  .translate-button {
+    padding: 0.3rem 0.9rem;
     font-size: 0.7rem;
+  }
+  .output-area {
+    width: 80vw;
+    height: 10vh;
+    margin: 1rem 0rem;
+    font-size: 0.8rem;
+    padding: 0.2rem;
+  }
+
+  body {
+    flex-direction: column-reverse;
+  }
+  .blue-section > img {
+    height: 15vh;
+  }
+
+  .yellow-footer {
+    display: none;
+  }
+
+  .blue-footer {
+    font-size: 0.8rem;
+    display: block;
+    color: var(--yellow-color);
+    padding: 0.1rem;
+  }
+  .above-intro {
+    display: inline;
+  }
+  .right-intro {
+    display: none;
+  }
+  main {
+    margin-top: 2.5rem;
   }
 }
